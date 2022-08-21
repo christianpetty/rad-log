@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<title>Timestamped Logger</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.rad.cm/reset.css">
+<link rel="stylesheet" href="https://www.radianrad.com/style.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadHistory()">
+
+<div class="alert"><noscript>Sorry this page requires Javascript to function.</noscript></div>
+<textarea id="history" name="history" readonly></textarea>
+<form id="thisForm">
+  <label></label><input type="text" id="note" name="note" autocomplete="off" placeholder="Type a note here and press Enter." autofocus><br>
+  <label></label><input type="button" value="Copy to Clipboard" onclick="copy2Clipboard()">
+  <label></label><input type="button" value="Clear" onclick="clearText()">
+</form>
+
+<script type='text/javascript' src="timestamp-logger.js"></script>
+</body>
+
+</html>
