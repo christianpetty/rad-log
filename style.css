@@ -45,3 +45,8 @@ input[type="button"] {
 .alert {
   color: orangered;
 }
+
+.readme {
+  float: right;
+  margin: 0;
+}
